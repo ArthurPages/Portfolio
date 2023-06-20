@@ -14,7 +14,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #49b9c0; }
+  color: #4dc049; }
 
 .reveal-modal {
   background-color: #3f3f3f !important;
@@ -29,9 +29,9 @@ a {
     padding-top: 15px; }
   .reveal-modal .header {
     font-size: 24pt;
-    color: #81FFFF; }
+    color: #81ffba; }
     .reveal-modal .header a {
-      color: #50D1F7; }
+      color: #50f7bf; }
   .reveal-modal .detail {
     display: block;
     font-weight: 300;
@@ -111,7 +111,7 @@ a {
   background-position: bottom left;
   animation: drift 500s linear infinite;
   -webkit-animation: drift 500s linear infinite;
-  background-color: #2f98b6;
+  background-color: #2fb667;
   margin-top: -1px;
   z-index: 1; }
 
@@ -125,7 +125,7 @@ section.projects {
   height: 58%; }
   section.projects .fa {
     position: absolute;
-    color: #10517E;
+    color: #107e3e;
     z-index: 11;
     bottom: 6vh;
     margin: auto 0;
@@ -269,7 +269,7 @@ section.about {
       display: block;
       text-align: center;
       font-size: 23pt;
-      color: #49b9c0;
+      color: #49c0ac;
       margin-bottom: 15px;
       font-weight: 600; }
     section.about .about-box .detail {
@@ -495,7 +495,7 @@ section.connect .icon-box {
     /* Safari */
     transform: scale(0.9); }
     section.connect .icon-box .icon:hover .fa {
-      color: #1B75BB; }
+      color: #1bbb36; }
   section.connect .icon-box .icon:hover .fa {
     -webkit-animation: toBottomFromTop 0.3s forwards;
     -moz-animation: toBottomFromTop 0.3s forwards;
@@ -524,12 +524,12 @@ section.connect .icon-box {
   text-transform: uppercase;
   font-size: 30pt;
   letter-spacing: .5em;
-  color: #51b6e5;
+  color: #51e594;
   font-weight: 300;
   padding-left: 53px;
   z-index: 5; }
   .landing-sect .title .highlight {
-    color: #0e76bc;
+    color: #14bc0e;
     font-weight: 700; }
 .landing-sect .tag-box {
   position: absolute;
@@ -598,7 +598,7 @@ section.connect .icon-box {
     opacity: 1;
     transition: opacity .1s, left .15s, right .3s; }
   .pane.p1 {
-    background: #1894b8;
+    background: #18b825;
     background-image: -moz-linear-gradient(72deg, #1789aa 0%, #189eae 100%);
     background-image: -webkit-linear-gradient(72deg, #1789aa 0%, #189eae 100%);
     background-image: -ms-linear-gradient(72deg, #1789aa 0%, #189eae 100%);
@@ -612,7 +612,7 @@ section.connect .icon-box {
     transition: opacity .1s, transform .3s, right .3s;
     -webkit-transition: opacity .1s, -webkit-transform .3s, right .3s; }
     .pane.p1 .header {
-      color: #A9EDFF;
+      color: #a9ffd4;
       left: 35px;
       bottom: 25px; }
     .pane.p1.shutter {
@@ -638,7 +638,7 @@ section.connect .icon-box {
     width: 42%;
     height: 100%; }
     .pane.p2 .header {
-      color: #49B9C0;
+      color: #49c063;
       top: 47%;
       left: 30px; }
     .pane.p2.shutter {
@@ -647,7 +647,7 @@ section.connect .icon-box {
       transform: translateX(100%); }
   .pane.p3 {
     pointer-events: all;
-    background: #20c2f1;
+    background: #20f17e;
     background-image: -moz-linear-gradient(75deg, #20aaf1 0%, #20c2f1 56%, #7fe1fd 100%);
     background-image: -webkit-linear-gradient(75deg, #20aaf1 0%, #20c2f1 56%, #7fe1fd 100%);
     background-image: -ms-linear-gradient(75deg, #20aaf1 0%, #20c2f1 56%, #7fe1fd 100%);
@@ -660,7 +660,7 @@ section.connect .icon-box {
     transition: opacity .1s, transform .3s, right .3s;
     -webkit-transition: opacity .1s, -webkit-transform .3s, right .3s; }
     .pane.p3 .header {
-      color: #1778AE;
+      color: #17ae6f;
       top: 25px;
       right: 35px;
       opacity: 1; }
@@ -681,7 +681,7 @@ section.connect .icon-box {
       -webkit-transform: translateY(-13%);
       transform: translateY(-13%); }
   .pane.p4 {
-    background: #b1e1ee;
+    background: #b1eee9;
     background-image: -moz-linear-gradient(138deg, #a2dbea 0%, #d2fdff 71%);
     background-image: -webkit-linear-gradient(138deg, #a2dbea 0%, #d2fdff 71%);
     background-image: -ms-linear-gradient(138deg, #a2dbea 0%, #d2fdff 71%);
@@ -691,7 +691,7 @@ section.connect .icon-box {
     width: 42%;
     height: 100%; }
     .pane.p4 .header {
-      color: #208DAC;
+      color: #20ac3e;
       right: 35px;
       top: 47%; }
     .pane.p4.shutter {

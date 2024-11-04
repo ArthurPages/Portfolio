@@ -21,30 +21,88 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
   <script src="slick/slick.js"></script>
   <script src="javascripts/script.js"></script>
+
+  <script>
+    const translations = {
+      es: {
+        title: "Arturo López",
+        subtitle1: "páginas responsivas",
+        subtitle2: "desarrollador fullstack",
+        subtitle3: "Videojuegos con Unity / Godot",
+        aboutHeader: "¿Quién es este tipo?",
+        aboutDetail: "Estoy seguro de que no quieres escuchar mi historia de vida, así que seré breve. Soy desarrollador FullStack y de Videojuegos. Tengo pasión por los videojuegos, las animaciones, el desarrollo tanto back como frontend y romper barreras en experiencias de usuario más intuitivas y dinámicas. ",
+        contactHeader: "Contactar",
+        aboutPane: "Sobre mí",
+        projectsPane: "Proyectos",
+        stackPane: "full stack",
+        menu1: "Home",
+        menu2: "Sobre mi",
+        menu3: "Proyectos",
+        menu4: "Stack",
+      },
+      en: {
+        title: "Arturo Lopez",
+        subtitle1: "responsive pages",
+        subtitle2: "fullstack developer",
+        subtitle3: "Videogames with Unity / Godot",
+        aboutHeader: "Who is this guy?",
+        aboutDetail: "I'm sure you don't want to hear my life story, so I'll be brief. I'm a FullStack and Video Game Developer. I have a passion for video games, animations, both back and frontend development, and breaking barriers in more intuitive and dynamic user experiences.",
+        contactHeader: "Contact",
+        aboutPane: "About me",
+        projectsPane: "Projects",
+        stackPane: "full stack",
+        menu1: "Home",
+        menu2: "About",
+        menu3: "Projects",
+        menu4: "Stack",
+      }
+    };
+
+    function changeLanguage(lang) {
+      document.querySelector('.title').innerHTML = `${translations[lang].title}<span class="highlight">López</span>`;
+      document.querySelector('.tag-box span:nth-child(1)').innerText = translations[lang].subtitle1;
+      document.querySelector('.tag-box span:nth-child(2)').innerText = translations[lang].subtitle2;
+      document.querySelector('.tag-box span:nth-child(3)').innerText = translations[lang].subtitle3;
+      document.querySelector('.about .header').innerText = translations[lang].aboutHeader;
+      document.querySelector('.about .detail').innerText = translations[lang].aboutDetail;
+      document.querySelector('.pane#1 .header').innerText = translations[lang].contactHeader;
+      document.querySelector('.pane#2 .header').innerText = translations[lang].aboutPane;
+      document.querySelector('.pane#3 .header').innerText = translations[lang].projectsPane;
+      document.querySelector('.pane#4 .header').innerText = translations[lang].stackPane;
+      document.querySelector('.pane shutter p1 span:nth-child(1)').innerTect = translations[lang].menu1;
+      document.querySelector('.pane shutter p2 span:nth-child(1)').innerText = translations[lang].menu2;
+      document.querySelector('.pane shutter p3 span:nth-child(1)').innerText = translations[lang].menu3;
+      document.querySelector('.pane shutter p4 span:nth-child(1)').innerText = translations[lang].menu4;
+    }
+  </script>
 </head>
 <body>
+  <div>
+    <button onclick="changeLanguage('es')">Es</button>
+    <button onclick="changeLanguage('en')">En</button>
+  </div>
 
-<div id="modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-  <div class="large-8 columns">
-    <div class="carousel" id="modal-carousel">
-      <div class="slide"><img></div>
-      <div class="slide"><img></div>
-      <div class="slide"><img></div>
+  <div id="modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <div class="large-8 columns">
+      <div class="carousel" id="modal-carousel">
+        <div class="slide"><img></div>
+        <div class="slide"><img></div>
+        <div class="slide"><img></div>
+      </div>
     </div>
-  </div>
-  <div class="large-4 columns"> 
-    <div class="info-box">
-      <span class="header"><a href="" target="_blank"></a></span>
-      <span class="detail"></span>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+    <div class="large-4 columns"> 
+      <div class="info-box">
+        <span class="header"><a href="" target="_blank"></a></span>
+        <span class="detail"></span>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </div>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
   </div>
-  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-</div>
 
   <div class="clouds">
     <div class="cloud" id="cloud-1"></div>
@@ -56,65 +114,22 @@
     <div class="cloud" id="cloud-2"></div>
     <div class="cloud" id="cloud-3"></div>
   </div>
+
   <section class="landing-sect">
     <span class="title">Arturo<span class="highlight">López</span></span>
     <div class="tag-box">
-      <span>responsive design</span>
-      <span class="center">fullstack jr developer</span>
-      <span>paginas básicas</span>
+      <span>responsive pages</span>
+      <span class="center">fullstack developer</span>
+      <span>Videogames with Unity / Godot</span>
     </div>
   </section>
-
-  <!-- <section class="projects">
-    <i class="fa fa-chevron-left" id="slick-prev"></i>
-    <i class="fa fa-chevron-right" id="slick-next"></i>
-    <div class="carousel" id="projects-carousel">
-      <div class="slide"> 
-        <div class="slide-wrap">
-          <img class="slide-img top" src="images/logos/roambi-top.png">
-          <img class="slide-img bot" src="images/logos/roambi-bot.jpg">
-          <div id="roambi" class="slide-button lefty modaler">Leer mas</div>
-          <a href="http://roambi.com" target="_blank"><div class="slide-button righty">Visitas Sitio</div></a>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="slide-wrap">
-          <img class="slide-img top" src="images/logos/walker-top.png">
-          <img class="slide-img bot" src="images/logos/walker-bot.jpg">
-          <div id="walker" class="slide-button modaler">Leer mas</div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="slide-wrap">
-          <img class="slide-img top" src="images/logos/powur-top.png">
-          <img class="slide-img bot" src="images/logos/powur-bot.jpg">
-          <div id="powur" class="slide-button lefty modaler">Leer mas</div>
-          <a href="http://www.powur.com" target="_blank"><div class="slide-button righty">Visitar sitio</div></a>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="slide-wrap">
-          <img class="slide-img top" src="images/logos/mystand-top.png">
-          <img class="slide-img bot" src="images/logos/mystand-bot.jpg">
-          <div id="mystand" class="slide-button modaler">Leer mas</div>
-        </div>
-      </div>
-      <div class="slide">
-        <div class="slide-wrap">
-          <img class="slide-img top" src="images/logos/never-top.png">
-          <img class="slide-img bot" src="images/logos/never-bot.jpg">
-          <div id="never" class="slide-button modaler">Leer mas</div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <section class="about">
     <div class="about-box">
       <img class="myface" src="images/myface.png">
       <img class="up-arrow" src="images/up-arrow.png">
       <span class="header">Quien es este tipo?</span>
-      <span class="detail light">Estoy seguro de que no quieres escuchar mi historia de vida, así que seré breve. Soy desarrollador jr en el Sanatorio Migone</a>Tengo una pasión seria por los videojuegos, las animaciones, el desarrollo tanto back como frontend y romper barreras en experiencias de usuario más intuitivas y dinámicas. Permíteme convertir tus grandes ideas en un excelente sitio web o programa. <a href="mailto:alsalinas119@gmail.com">contactame.</a></span>
+      <span class="detail light">Estoy seguro de que no quieres escuchar mi historia de vida, así que seré breve. Soy desarrollador FullStack y de Videojuegos. Tengo pasión por los videojuegos, las animaciones, el desarrollo tanto back como frontend y romper barreras en experiencias de usuario más intuitivas y dinámicas.</span>
     </div>
   </section>
 
@@ -140,15 +155,10 @@
           <i class="fa fa-instagram"></i>
         </div>
       </a>
-      <!-- <a href="http://codepen.io/matthewwilliams/">
-        <div class="icon" id="icon-5"> 
-          <i class="fa fa-codepen"></i>
-        </div>
-      </a> -->
     </div>
     <div class="info-box">
-      <span class="left"><b>WhatsApp: </b>+5959 72 181-248<b> &nbsp;&nbsp; Email: </b>alsalinas119@gmail.com</span>
-      <span class="right">&copy;2023. Arturo<span class="light">López</span>. All Rights Reserved</span>
+      <span class="left"><b>WhatsApp: </b>+5959 72 755-275<b> &nbsp;&nbsp; Email: </b>alsalinas119@gmail.com</span>
+      <span class="right">&copy;2024. Arturo<span class="light">López</span>. All Rights Reserved</span>
     </div>
   </section>
 
@@ -192,23 +202,24 @@
       </div>
       <div class="box" id="box-10">
         <div class="badge" id="badge-10"></div>
-        <span>MySql</span>
+        <span>Postgre SQL</span>
       </div>
     </div>
   </section>
 
   <div class="pane shutter p1" id="1">
-    <span class="header">Contactar</span>
+    <span class="header">Contact</span>
   </div>
   <div class="pane shutter p2" id="2">
-    <span class="header">Sobre mi</span>
+    <span class="header">About </span>
   </div>
   <div class="pane start p3" id="3">
-    <span class="header">Proyectos </span>
+    <span class="header">Projects</span>
   </div>
   <div class="pane shutter p4" id="4">
-    <span class="header">full stack jr</span>
+    <span class="header">full stack</span>
   </div>
+
   <div class="square" id="square">
     <img class="logo shake" src="images/mylogo.png">
   </div>
